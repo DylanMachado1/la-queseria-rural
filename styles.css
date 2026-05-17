@@ -442,26 +442,18 @@ h3 {
   margin-bottom: 0;
 }
 
-.map-placeholder {
+.map-embed {
   min-height: 560px;
   border-radius: 28px;
-  background:
-    linear-gradient(rgba(247, 240, 229, 0.15), rgba(247, 240, 229, 0.15)),
-    url("assets/la-portera-camino.jpeg") center/cover;
+  overflow: hidden;
   box-shadow: var(--shadow);
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 30px;
 }
 
-.map-placeholder span {
-  display: inline-flex;
-  padding: 14px 22px;
-  border-radius: 999px;
-  background: var(--white);
-  color: var(--brown);
-  font-weight: 700;
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 560px;
+  border-radius: 28px;
 }
 
 .cta {
@@ -544,8 +536,12 @@ footer p {
   .image-stack img,
   .honey .feature-image,
   .cured .feature-image,
-  .map-placeholder {
+  .map-embed {
     min-height: 420px;
+    height: 420px;
+  }
+
+  .map-embed iframe {
     height: 420px;
   }
 
