@@ -511,6 +511,12 @@ h3 {
   height: 350px;
 }
 
+.gallery-grid img.contain-photo {
+  object-fit: contain;
+  padding: 14px;
+  background: #fff8ef;
+}
+
 .location {
   display: grid;
   grid-template-columns: 0.95fr 1fr;
