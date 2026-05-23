@@ -556,9 +556,10 @@ h3 {
 }
 
 .hours-block p {
-  display: flex;
-  justify-content: space-between;
-  gap: 18px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  align-items: baseline;
+  gap: 24px;
   margin-bottom: 10px;
   color: #211712;
 }
@@ -574,6 +575,7 @@ h3 {
 .hours-block b {
   color: var(--brown);
   white-space: nowrap;
+  text-align: right;
 }
 
 .map-embed {
@@ -964,21 +966,19 @@ footer p {
   }
 
   .hours-block p {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: baseline;
-    gap: 12px;
+    display: block;
     margin-bottom: 12px;
   }
 
   .hours-block span,
   .hours-block b {
-    display: inline;
+    display: block;
   }
 
   .hours-block b {
+    margin-top: 2px;
     font-size: 1.08rem;
-    text-align: right;
+    text-align: left;
   }
 
   .cta {
