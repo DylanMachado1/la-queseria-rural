@@ -575,7 +575,7 @@ h3 {
 .hours-block b {
   color: var(--brown);
   white-space: nowrap;
-  text-align: right;
+  text-align: left;
 }
 
 .map-embed {
