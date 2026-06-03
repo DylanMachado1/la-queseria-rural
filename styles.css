@@ -549,12 +549,22 @@ h3 {
   gap: 18px;
 }
 
-.option-list p {
-  min-height: 124px;
-  padding: 20px;
+.option-list > div {
+  overflow: hidden;
   border-radius: 18px;
   background: #fffaf2;
   border: 1px solid rgba(184, 121, 0, 0.16);
+}
+
+.option-list img {
+  height: 150px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.option-list p {
+  min-height: 124px;
+  padding: 18px;
 }
 
 .option-list strong,
@@ -1148,6 +1158,10 @@ footer p {
   .option-list p {
     min-height: 0;
     padding: 18px;
+  }
+
+  .option-list img {
+    height: 190px;
   }
 
   .guri-card {
