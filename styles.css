@@ -47,7 +47,7 @@ a {
   flex-direction: column;
   background:
     linear-gradient(rgba(26, 33, 25, 0.32), rgba(20, 35, 32, 0.7)),
-    url("assets/hero-queso.jpeg") center/cover;
+    url("assets/hero-queso.webp") center/cover;
 }
 
 .nav {
@@ -129,6 +129,8 @@ a {
   width: min(1240px, calc(100% - 48px));
   margin: 0 auto;
   padding: 92px 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 760px;
 }
 
 .split {
