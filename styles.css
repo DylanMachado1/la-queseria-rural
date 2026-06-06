@@ -530,7 +530,8 @@ h3 {
 .combo-card p,
 .combo-options p,
 .option-list span,
-.guri-card p {
+.guri-card p,
+.sharing-note p {
   color: var(--brown-soft);
 }
 
@@ -580,6 +581,47 @@ h3 {
   display: block;
   margin-top: 8px;
   line-height: 1.5;
+}
+
+.sharing-note {
+  margin-top: 22px;
+  padding: 28px;
+  border-radius: 22px;
+  background: #3a261b;
+  color: var(--white);
+}
+
+.sharing-note .card-kicker {
+  color: #ffd36a;
+}
+
+.sharing-note h3 {
+  max-width: 620px;
+  margin-bottom: 14px;
+}
+
+.sharing-note p {
+  max-width: 650px;
+  color: #f1dfc7;
+}
+
+.sharing-note > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.sharing-note span {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: rgba(255, 211, 106, 0.14);
+  color: #ffe5a0;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .sandwich-list {
@@ -1189,6 +1231,15 @@ footer p {
   .option-list p {
     min-height: 0;
     padding: 18px;
+  }
+
+  .sharing-note {
+    margin-top: 18px;
+    padding: 22px;
+  }
+
+  .sharing-note h3 {
+    font-size: 1.28rem;
   }
 
   .option-list img {
