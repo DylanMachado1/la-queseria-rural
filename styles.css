@@ -621,13 +621,22 @@ h3 {
 
 .guri-card {
   margin-top: 22px;
-  padding: 24px;
   display: grid;
-  grid-template-columns: 0.78fr 1fr;
-  gap: 22px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  padding: 0;
   background: #3a261b;
   color: var(--white);
+}
+
+.guri-card img {
+  height: 210px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.guri-card > div {
+  padding: 24px;
 }
 
 .guri-card .card-kicker {
@@ -636,7 +645,7 @@ h3 {
 }
 
 .guri-card h3 {
-  margin-bottom: 0;
+  margin-bottom: 12px;
   font-size: clamp(1.35rem, 2vw, 1.9rem);
 }
 
@@ -1191,7 +1200,16 @@ footer p {
   }
 
   .guri-card {
-    gap: 12px;
+    gap: 0;
+    padding: 0;
+  }
+
+  .guri-card img {
+    height: 190px;
+  }
+
+  .guri-card > div {
+    padding: 22px;
   }
 
   .product-card img {
