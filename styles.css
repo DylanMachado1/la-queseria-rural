@@ -489,13 +489,19 @@ h3 {
 
 .picada-kilo-main img,
 .picada-kilo-side img {
+  width: 100%;
+  height: 100%;
   border-radius: 0;
   box-shadow: none;
+  object-fit: cover;
 }
 
 .picada-kilo-main > div,
 .picada-kilo-side > div {
+  position: relative;
+  z-index: 1;
   padding: 32px;
+  background: var(--white);
 }
 
 .picada-kilo-main h3,
@@ -1030,7 +1036,25 @@ footer p {
 
   .picada-kilo-main,
   .picada-kilo-side {
-    grid-template-rows: 260px auto;
+    display: block;
+  }
+
+  .picada-kilo-main img,
+  .picada-kilo-side img {
+    height: 250px;
+    min-height: 0;
+  }
+
+  .picada-kilo-main > div,
+  .picada-kilo-side > div {
+    background: #fffaf2;
+    border-top: 1px solid rgba(184, 121, 0, 0.16);
+  }
+
+  .picada-kilo-main h3,
+  .picada-kilo-side h3 {
+    font-size: 1.36rem;
+    line-height: 1.18;
   }
 
   .picada-kilo-notes {
