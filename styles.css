@@ -239,11 +239,6 @@ h3 {
   object-position: center top;
 }
 
-.image-stack img.image-contain {
-  object-fit: contain;
-  background: #fffaf2;
-}
-
 .stat-card {
   position: absolute;
   left: -40px;
