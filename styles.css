@@ -579,61 +579,6 @@ h3 {
   font-weight: 700;
 }
 
-.giveaway {
-  display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(360px, 0.78fr);
-  gap: 34px;
-  align-items: center;
-  width: min(1240px, calc(100% - 48px));
-  border-radius: 28px;
-  background: #3a261b;
-  color: var(--white);
-  padding: clamp(28px, 4vw, 54px);
-  box-shadow: var(--shadow);
-}
-
-.giveaway .eyebrow {
-  color: #ffd873;
-}
-
-.giveaway h2 {
-  color: var(--white);
-}
-
-.giveaway p {
-  color: #fff1d3;
-  font-size: 1.06rem;
-}
-
-.giveaway small {
-  display: block;
-  margin-top: 22px;
-  color: #f7dca7;
-  line-height: 1.55;
-}
-
-.giveaway-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 26px;
-}
-
-.giveaway-video {
-  overflow: hidden;
-  border-radius: 22px;
-  background: #20120c;
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.26);
-}
-
-.giveaway-video video {
-  display: block;
-  width: 100%;
-  max-height: 640px;
-  aspect-ratio: 9 / 16;
-  object-fit: cover;
-}
-
 .mini-cards,
 .value-grid {
   display: grid;
@@ -886,7 +831,6 @@ footer a {
   .timeline,
   .memory-grid,
   .memory-card.wide,
-  .giveaway,
   .picada-kilo-grid {
     grid-template-columns: 1fr;
   }
@@ -1053,8 +997,7 @@ footer a {
   .products,
   .picada-kilo,
   .gallery,
-  .living-story,
-  .giveaway {
+  .living-story {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -1231,25 +1174,6 @@ footer a {
 
   .product-card img {
     height: 250px;
-  }
-
-  .giveaway {
-    width: calc(100% - 32px);
-    gap: 24px;
-    padding: 24px;
-    border-radius: 22px;
-  }
-
-  .giveaway-actions {
-    flex-direction: column;
-  }
-
-  .giveaway-video {
-    border-radius: 18px;
-  }
-
-  .giveaway-video video {
-    max-height: 560px;
   }
 
   .gallery-grid img {
