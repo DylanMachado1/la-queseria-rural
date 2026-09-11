@@ -181,6 +181,10 @@ a {
   scroll-margin-top: 0;
 }
 
+.hero::before {
+  pointer-events: none;
+}
+
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
