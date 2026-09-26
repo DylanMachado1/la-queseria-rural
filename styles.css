@@ -243,6 +243,10 @@ h3 {
   object-position: center top;
 }
 
+.image-stack .story-family-photo {
+  object-position: center 62%;
+}
+
 .stat-card {
   position: absolute;
   left: -40px;
@@ -333,8 +337,30 @@ h3 {
   background: #fffaf2;
   border-left: 6px solid var(--honey);
   border-radius: 18px;
-  padding: 30px;
+  overflow: hidden;
   box-shadow: var(--shadow);
+}
+
+.timeline article > img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.timeline article:nth-child(1) > img {
+  object-position: center 58%;
+}
+
+.timeline article:nth-child(2) > img {
+  object-position: center 42%;
+}
+
+.timeline article:nth-child(3) > img {
+  object-position: center 18%;
+}
+
+.timeline article > div {
+  padding: 30px;
 }
 
 .timeline span,
